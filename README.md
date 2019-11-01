@@ -1,5 +1,7 @@
 # Large HSET keys delete
-> If you afraid when large hash files has been deleted on Redis. You have to delete per single hash keys step by step. 
+> If you afraid when large hash files has been deleted on Redis. You have to delete per single hash keys step by step.
+> For example, you have a registered hash list of 30 million. If you delete it with the “del” command, you will probably have a huge load on your system. Or you may experience a crash.
+> By scanning with the “HSCAN” command, I think it is the healthiest method to do this singular operation. 
 
 ## Usage
 ```shell
