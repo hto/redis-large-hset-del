@@ -78,7 +78,5 @@ func main() {
 		if cursor == 0 {
 			break
 		}
-
-		time.Sleep(3 * time.Second)
 	}
 }
